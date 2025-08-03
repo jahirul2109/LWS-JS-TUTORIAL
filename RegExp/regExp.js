@@ -65,5 +65,10 @@ let result2 = text2.match(/\s/g);
 console.log(result2);
 
 let test = /e/.exec("Amr sonar bangla ami tomai valobasi")
-console.log(test);
+ console.log(test);
+  let message = "";
+  let x = "12";
+
+  
+  
 
