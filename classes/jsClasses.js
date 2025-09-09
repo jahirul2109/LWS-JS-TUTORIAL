@@ -4,7 +4,7 @@ class Candidate {
         this.duty = duty;
     }
     play () {
-        console.log(`${this.Fname} is playing`);
+        console.log(`${this.Fname} is playing at ${this.duty}`);
         
     }
 }
