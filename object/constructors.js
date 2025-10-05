@@ -12,9 +12,12 @@ const rabal = new Person ("Rabiul", "islam", 20);
 const yasin = new Person ( "Yasin", "Arafat", 21);
 const anik = new Person ("Anika", "Apa", 20);
 shuvo.country = "Bangladesh";
-console.log(shuvo);
- Person.prototype.religion = "islam";
- console.dir(Person.religion);
+Person.prototype.religion = "islam";
+console.log(shuvo.religion);
+console.log(yasin);
+console.log(yasin.fullName ());
+
+ console.log(Person.religion);
  
 
 
