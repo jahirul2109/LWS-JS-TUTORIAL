@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --lightDark: #212936;
+  --dark: #141722;
+  --fontPrimary: #fff;
+  --green: #35bb78;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--fontPrimary);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+body {
+    background-color: var(--lightDark);
+}
+.nav-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--dark);
+    padding: 15px 30px;
+}
+.nav-section img {
+    width: 40px;
+}
+ .right-bar, .left-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-section .right-bar img {
+    height: 30px;
+    width: 30px;
+}
+.right-bar p {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+.left-bar p {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+    max-height: 100vh;
+}
+
+.milestoneImg {
+width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  -webkit-transition: opacity 0.8s linear;
+  -moz-transition: opacity 0.8s linear;
+  transition: opacity 0.8s linear;
+}
+.flex {
+    display: flex;
+    /* gap: 10px; */
+}
+.milstones, .doneList {
+    background-color: var(--dark);
+    border-radius: 7px;
+    cursor: pointer;
+    overflow: auto;
+    max-height: 72vh;
+}
+.doneList {
+    margin-top: 20px;
+}
+.module,.milstone {
+    background-color: var(--dark);
+    font-size: 14px;
+    color: var(--white);
+    padding: 10px;
+    margin: 10px;
+}
+.milstoneDetiels {
+    font-size: 14px;
+    color: var(--white);
+}
+.hiden_panel {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s ;
+    -moz-transition: max-height 0.8s ;
+    transition: max-height 0.8s ;
+
+}
+#cBox {
+    width: 40px;
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.show {
+    max-height: 400px;
+}
+.active {
+    font-weight: bold;
+}
+.border-b {
+  border-bottom: 1px solid rgb(31, 41, 55);
+}
+.titile, .dctp {
+    margin-top: 10px;
+    color: var(--white);
+}
+.titile {
+    font-size: 30px;
+}
+@media only screen and (max-width: 1024px) {
+    .main{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 15px;
+    grid-gap: 10px;
+    }
+   .nav-section {
+    display: block;
+    padding: 10px ;
+   }
+   .right-bar, .left-bar {
+    justify-content: left;
+   }
+   .right-bar,.left-bar p {
+     display: none;
+   }
+   .nav-section img {
+    width: 30px;
+   }
+    .titile{
+    font-size: 20px;
+   }
+}
+@media only screen and (min-width : 1440px) {
+    .milstones, .doneList {
+    border-radius: 10px;
+    max-height: 100vh;
+}
+.module,.milstone {
+    background-color: var(--dark);
+    font-size: 15px;
+    color: var(--white);
+    padding: 15px;
+    margin: 10px;
+}
+}
