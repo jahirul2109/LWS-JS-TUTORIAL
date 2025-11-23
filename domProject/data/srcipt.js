@@ -75,5 +75,4 @@ function showMilestone (id) {
  }
 
 loadMilstone () ;
-const h = window.innerHeight;
-const w = window.innerWidth;
+
