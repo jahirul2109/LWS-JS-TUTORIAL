@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="table" id="dropD" onchange="change_mySelect(this.value)">
+        <option value="">Chose an option</option>
+        <option value="customers">Coustomers</option>
+        <option value="products">products</option>
+        <option value="suppliers">Saller</option>
+    </select>
+    <p id="demo"></p>
+    <script>
+    let x ;
+    let text ;
+    async function change_mySelect(sel) {
+    const dparam = JSON.stringify({table : sel, limit : 20})
+   const response = await fetch("json_demo_html_table.php", {
+    method : "POST",
+    headers : {
+        "Content-Type":"application/x-www-form-urlencoded"
+    },
+    body : "x=" + dparam,
+   })
+   const data = await response.json();
+   text= '<table border="1">';
+    for (x in data) {
+        text+= '<tr><td>' + data[x].name + '</td></tr>';
+    }
+    text += "</table>";
+    document.getElementById ('demo').innerHTML = text;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hello">
+        <p>Hello world</p>
+        <p id="ban">Hello bangladesh</p>
+        <p id="dha">Helllo Dhaka</p>
+    </div>
+    <script>
+        const pera = document.createElement('h1');
+        const Hello = document.querySelector("#hello");
+        const ban = document.querySelector('#ban');
+        const dha = document.querySelector ('#dha')
+        pera.appendChild(document.createTextNode('Hello jatrabari')) // <p> Hello jatrabri </p>
+        Hello.insertBefore(pera, ban)
+        // dha.remove ();
+        // Hello.removeChild (dha);
+        Hello.replaceChild (pera, dha) // 1st perameter = New value, 2nd perameter = jar poriborte bosamu
+    </script>
+</body>
+</html>

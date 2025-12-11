@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Screen.js here  -->
+ <div class="screen">
+    <div class="height"></div>
+    <div class="width"></div>
+    <div class="avHeight"></div>
+    <div class="avWidth"></div>
+</div>
+<hr>
+
+   <!-- location.js here -->
+<div class="location">
+    <div class="href"></div>
+    <div class="hostname"></div>
+    <div class="pathname"></div>
+    <div class="protocol"></div>
+    <div class="port"></div>
+    <input type="button" value="Load new documnet" onclick="loaded ()">
+</div> 
+<hr>
+
+   <!-- history.js here  -->
+<div class="history">
+<input type="button" value="Back" onclick="back()">
+<input type="button" value="Forward" onclick="forward()">
+</div>
+<hr>
+
+<div id="cookie">
+    <div id="gsName"></div>
+    <div id="gsuName"></div>
+
+    <div id="setName">
+        <input type="button" value="Set Name"  onclick="setName('name', 'Jahirul', 3)">
+    </div>
+    <div id="setUserName">
+        <input type="button" value="Set User Name" onclick="setName('Username', 'Rabiul', 2)">
+    </div>
+    <div id="getSetName">
+        <input type="button" value="Get Set Name" onclick="getSetName()">
+    </div>
+    <div id="getSetUserName">
+        <input type="button" value="Get Set User Name">
+    </div>
+</div>
+
+<!-- <script src="screen.js"></script> -->
+<!-- <script src="location.js"></script> -->
+<!-- <script src="history.js"></script> -->
+<script src="cookie.js"></script>
+</body>
+</html>
